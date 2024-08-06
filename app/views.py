@@ -12,16 +12,6 @@ from .serializer import (
     RegisterSerializer,
     SentRequestSerializer,
 )
-from django.core.mail import send_mail
-from django.conf import settings
-
-# def send_email(email):
-#     return send_mail(
-#         subject='A cool subject',
-#         message='A stunning message',
-#         from_email=settings.EMAIL_HOST_USER,
-#         recipient_list=[email]
-#     )
 
 class RegisterView(APIView):
 
